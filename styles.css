@@ -1,9 +1,13 @@
-:root {
+    :root {
       --bg: #111;
       --fg: #fff;
       --accent: #fff;
       --border: #333;
       --font: 'Segoe UI', 'Arial', sans-serif;
+    }
+
+    ::-webkit-scrollbar{
+      display: none;
     }
     html, body {
       height: 100%;
@@ -64,4 +68,16 @@
     }
     a:hover {
       color: #ccc;
+    }
+
+    button {
+      background: var(--accent);
+      color: var(--bg);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.2s, transform 0.1s;
+      font-weight: bold;
     }
